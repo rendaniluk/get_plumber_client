@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Shoe Catalogue</title>
+  <link rel="shortcut icon" href="logo/logo.png">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/shop-homepage.css" rel="stylesheet">
+  <link href="plumber.css" rel="stylesheet">
+
+  <script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-inverse bg-dark text-white fixed-top">
+    <!-- <img class="logo" src="logo/logo.png" alt="uadivha's shoes"> -->
+    <a class="navbar-brand">Plumber Services</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <svg data-tpl="svg" data-module="animation" data-animation="svg-burger-menu" data-animation-config="" id="svg-315" width="40" height="20" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+      <defs id="SvgjsDefs1001"></defs><g id="SvgjsG1007"></g><path id="line_x5F_top" d="M195.008,55H4.994C2.235,55,0,52.762,0,50s2.235-5,4.994-5h190.014c2.758,0,4.992,2.238,4.992,5
+  S197.766,55,195.008,55z" origY="45"></path><path id="line_x5F_middle" d="M200,100c0-2.762-2.234-5-4.992-5H4.994C2.235,95,0,97.238,0,100c0,2.763,2.235,5,4.994,5h190.014
+  C197.766,105,200,102.763,200,100z" origY="95"></path><path id="line_x5F_down" d="M200,150c0-2.76-2.234-5-4.992-5H4.994C2.235,145,0,147.24,0,150c0,2.761,2.235,5,4.994,5h190.014
+  C197.766,155,200,152.761,200,150z" origY="145"></path></svg><span>Menu</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register_plumber">
+    Register as plumber
+  </button>
+
+    </ul>
+    </div>
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Modal -->
+    <div class="modal fade" id="register_plumber" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Register as plumber</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+            <div class="form">
+              <form class="form-control addPlumber" method="post">
+                <div class="field">
+                <input type="text" required name="first_name" class="inputText" align="center" placeholder="Enter First Name">
+                <input type="text" required name="last_name" class="inputText" align="center" placeholder="Enter Last Name">
+                <input type="text" required name="cell_number" class="inputText" align="center" placeholder="Enter Phone Number">
+                <!-- <label for="plumbers days">Days :</label> -->
+                  <select name="day">
+                          <option value="" disabled selected>Select Day</option>
+                          <option value="Monday">Monday</option>
+                          <option value="Tuesday">Tuesday</option>
+                          <option value="Wednesday">Wednesday</option>
+                          <option value="Thursday">Thursday</option>
+                          <option value="Friday">Friday</option>
+                          <option value="Saturday">Saturday</option>
+                          <option value="Sunday">Sunday</option>
+                  </select>
+
+                <!-- <label for="plumbers days">Shifts :</label> -->
+                  <select class="shift" name="slot">
+                          <option value="" disabled selected>Select Shifts</option>
+                          <option value="Afternoon">Afternoon</option>
+                          <option value="Morning">Morning</option>
+                          <option value="Late">Evening</option>
+                  </select>
+
+            </div>
+          <div class="modal-footer">
+            <input type="submit" class="btn btn-success" value="Submit">
+          </div>
+          </form>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  <select class="slot">
+    <option value="" disabled selected>Select Shifts</option>
+    <option value="Afternoon">Afternoon</option>
+    <option value="Morning">Morning</option>
+    <option value="Late">Evening</option>
+  </select>
+  <select class="day">
+          <option value="" disabled selected>Select Day</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+  </select>
+
+<!-- <label for="plumbers days">Shifts :</label> -->
+<input type="button" class="employers" name="name" value="Get Plumber">
+
+  </div>
+</body>
+<script src="employer.js" type="text/javascript" charset="utf-8"></script>
+<script src="plumber.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Bootstrap core JavaScript -->
+<!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</html>
