@@ -1,7 +1,7 @@
 (function() {
 
   $(".addStock").submit(function(e) {
-    var url = "http://localhost:5000/api/plumber/slot"; // the script where you handle the form input.
+    var url = "https://localhost:5000/api/plumber/slot"; // the script where you handle the form input.
     $.ajax({
       type: "POST",
       url: url,

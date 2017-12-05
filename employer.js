@@ -13,7 +13,8 @@
 
   //filter size only brand and size
   var getSpecificPlumber = function(slot, day) {
-    var url = "http://localhost:5000/api/employers/shift/" + slot + "/day/" +
+    var url = "https://localhost:5000/api/employers/shift/" + slot +
+      "/day/" +
       day;
     $.post(url)
       .then(function(plumber) {
