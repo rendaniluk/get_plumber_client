@@ -1,5 +1,3 @@
-(function() {
-
   $(".addStock").submit(function(e) {
     var url = "https://localhost:5000/api/plumber/slot"; // the script where you handle the form input.
     $.ajax({
@@ -13,4 +11,3 @@
     });
     e.preventDefault(); // avoid to execute the actual submit of the form.
   });
-})();
